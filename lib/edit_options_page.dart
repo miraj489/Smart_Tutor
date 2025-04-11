@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 
 class EditOptionsPage extends StatefulWidget {
+  const EditOptionsPage({super.key});
+
   @override
   _EditOptionsPageState createState() => _EditOptionsPageState();
 }
@@ -17,7 +19,7 @@ class _EditOptionsPageState extends State<EditOptionsPage> {
     return Scaffold(
       appBar: AppBar(
         title: Text('Edit Options'),
-        backgroundColor: Colors.deepPurple,
+        backgroundColor: const Color.fromARGB(255, 236, 237, 240),
       ),
       body: Padding(
         padding: const EdgeInsets.all(16.0),
@@ -121,12 +123,12 @@ class _EditOptionsPageState extends State<EditOptionsPage> {
                     );
                   }
                 },
-                child: Text('Save Changes'),
                 style: ElevatedButton.styleFrom(
-                  backgroundColor: Colors.deepPurple,
+                  backgroundColor: const Color.fromARGB(255, 228, 226, 233),
                   padding: EdgeInsets.symmetric(vertical: 16),
                   textStyle: TextStyle(fontSize: 16),
                 ),
+                child: Text('Save Changes'),
               ),
             ],
           ),

@@ -28,12 +28,14 @@ class SubjectsCoursesPage extends StatelessWidget {
     },
   ];
 
+  SubjectsCoursesPage({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
         title: Text('Subjects & Courses'),
-        backgroundColor: Colors.deepPurple,
+        backgroundColor: const Color.fromARGB(255, 225, 222, 229),
       ),
       body: Padding(
         padding: const EdgeInsets.all(16.0),
@@ -76,14 +78,19 @@ class SubjectsCoursesPage extends StatelessWidget {
                             ),
                           );
                         },
-                        child: Text('Enroll Now'),
                         style: ElevatedButton.styleFrom(
-                          backgroundColor: Colors.deepPurple,
+                          backgroundColor: const Color.fromARGB(
+                            255,
+                            199,
+                            195,
+                            207,
+                          ),
                           padding: EdgeInsets.symmetric(
                             horizontal: 24,
                             vertical: 12,
                           ),
                         ),
+                        child: Text('Enroll Now'),
                       ),
                     ),
                   ],

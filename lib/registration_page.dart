@@ -3,6 +3,8 @@ import 'package:flutter/material.dart';
 class RegistrationPage extends StatefulWidget {
   static List<Map<String, String>> registeredUsers = [];
 
+  const RegistrationPage({super.key});
+
   @override
   _RegistrationPageState createState() => _RegistrationPageState();
 }
@@ -23,7 +25,7 @@ class _RegistrationPageState extends State<RegistrationPage> {
       backgroundColor: Colors.deepPurple[50],
       appBar: AppBar(
         title: Text('Register'),
-        backgroundColor: Colors.deepPurple,
+        backgroundColor: const Color.fromARGB(255, 223, 220, 227),
       ),
       body: Center(
         child: SingleChildScrollView(
@@ -136,7 +138,7 @@ class _RegistrationPageState extends State<RegistrationPage> {
                       }
                     },
                     style: ElevatedButton.styleFrom(
-                      backgroundColor: Colors.deepPurple,
+                      backgroundColor: const Color.fromARGB(255, 235, 233, 239),
                       minimumSize: Size(double.infinity, 50),
                       shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(12),

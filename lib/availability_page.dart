@@ -13,29 +13,35 @@ class AvailabilityPage extends StatelessWidget {
     'Saturday: 10:00 AM - 12:00 PM (Student: Alex Johnson)',
   ];
 
+  AvailabilityPage({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
         title: Text('Availability'),
-        backgroundColor: Colors.deepPurple,
+        backgroundColor: const Color.fromARGB(255, 225, 223, 229),
       ),
-      body: Padding(
-        padding: const EdgeInsets.all(16.0),
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            Text(
-              'Available Times',
-              style: TextStyle(
-                fontSize: 18,
-                fontWeight: FontWeight.bold,
-                color: Colors.deepPurple,
+      body: SingleChildScrollView(
+        child: Padding(
+          padding: const EdgeInsets.all(16.0),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Text(
+                'Available Times',
+                style: TextStyle(
+                  fontSize: 18,
+                  fontWeight: FontWeight.bold,
+                  color: Colors.deepPurple,
+                ),
               ),
-            ),
-            SizedBox(height: 8),
-            Expanded(
-              child: ListView.builder(
+              SizedBox(height: 8),
+              ListView.builder(
+                shrinkWrap:
+                    true, // Ensures the ListView takes only the necessary space
+                physics:
+                    NeverScrollableScrollPhysics(), // Prevents nested scrolling
                 itemCount: availableTimes.length,
                 itemBuilder: (context, index) {
                   return Card(
@@ -54,19 +60,21 @@ class AvailabilityPage extends StatelessWidget {
                   );
                 },
               ),
-            ),
-            SizedBox(height: 16),
-            Text(
-              'Booked Times',
-              style: TextStyle(
-                fontSize: 18,
-                fontWeight: FontWeight.bold,
-                color: Colors.deepPurple,
+              SizedBox(height: 16),
+              Text(
+                'Booked Times',
+                style: TextStyle(
+                  fontSize: 18,
+                  fontWeight: FontWeight.bold,
+                  color: Colors.deepPurple,
+                ),
               ),
-            ),
-            SizedBox(height: 8),
-            Expanded(
-              child: ListView.builder(
+              SizedBox(height: 8),
+              ListView.builder(
+                shrinkWrap:
+                    true, // Ensures the ListView takes only the necessary space
+                physics:
+                    NeverScrollableScrollPhysics(), // Prevents nested scrolling
                 itemCount: bookedTimes.length,
                 itemBuilder: (context, index) {
                   return Card(
@@ -85,8 +93,8 @@ class AvailabilityPage extends StatelessWidget {
                   );
                 },
               ),
-            ),
-          ],
+            ],
+          ),
         ),
       ),
     );

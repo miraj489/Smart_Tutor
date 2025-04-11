@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 
 class TutionDetailPage extends StatelessWidget {
+  const TutionDetailPage({super.key});
+
   @override
   Widget build(BuildContext context) {
     // Dummy data – in real case, pass it dynamically
@@ -17,7 +19,7 @@ class TutionDetailPage extends StatelessWidget {
       backgroundColor: Colors.deepPurple[50],
       appBar: AppBar(
         title: Text('Tuition Job Details'),
-        backgroundColor: Colors.deepPurple,
+        backgroundColor: const Color.fromARGB(255, 228, 225, 232),
       ),
       body: Padding(
         padding: const EdgeInsets.all(20.0),

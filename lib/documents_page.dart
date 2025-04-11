@@ -24,11 +24,13 @@ class DocumentsPage extends StatelessWidget {
     },
   ];
 
+  DocumentsPage({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Documents & Credentials'),
+        title: const Text('Documents & Credentials'),
         backgroundColor: Colors.deepPurple,
       ),
       body: Padding(
@@ -38,7 +40,7 @@ class DocumentsPage extends StatelessWidget {
           itemBuilder: (context, index) {
             final document = documents[index];
             return Card(
-              margin: EdgeInsets.only(bottom: 16),
+              margin: const EdgeInsets.only(bottom: 16),
               elevation: 4,
               shape: RoundedRectangleBorder(
                 borderRadius: BorderRadius.circular(12),
@@ -60,11 +62,11 @@ class DocumentsPage extends StatelessWidget {
                                   : Colors.orange,
                           size: 30,
                         ),
-                        SizedBox(width: 16),
+                        const SizedBox(width: 16),
                         Expanded(
                           child: Text(
                             document['title']!,
-                            style: TextStyle(
+                            style: const TextStyle(
                               fontSize: 18,
                               fontWeight: FontWeight.bold,
                               color: Colors.deepPurple,
@@ -73,12 +75,15 @@ class DocumentsPage extends StatelessWidget {
                         ),
                       ],
                     ),
-                    SizedBox(height: 8),
+                    const SizedBox(height: 8),
                     Text(
                       document['description']!,
-                      style: TextStyle(fontSize: 14, color: Colors.black87),
+                      style: const TextStyle(
+                        fontSize: 14,
+                        color: Colors.black87,
+                      ),
                     ),
-                    SizedBox(height: 16),
+                    const SizedBox(height: 16),
                     Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
@@ -105,16 +110,16 @@ class DocumentsPage extends StatelessWidget {
                               ),
                             );
                           },
-                          child: Text(
-                            document['status'] == 'Verified'
-                                ? 'View'
-                                : 'Upload',
-                          ),
                           style: ElevatedButton.styleFrom(
                             backgroundColor:
                                 document['status'] == 'Verified'
                                     ? Colors.green
                                     : Colors.orange,
+                          ),
+                          child: Text(
+                            document['status'] == 'Verified'
+                                ? 'View'
+                                : 'Upload',
                           ),
                         ),
                       ],

@@ -12,12 +12,17 @@ import 'edit_options_page.dart';
 import 'intro_video_page.dart';
 import 'availability_page.dart';
 import 'subjects_courses_page.dart';
+import 'edit_profile_page.dart';
+import 'requirement_details_page.dart';
+import 'tutor_ratings_page.dart';
 
 void main() {
-  runApp(SmartTutorApp());
+  runApp(const SmartTutorApp());
 }
 
 class SmartTutorApp extends StatelessWidget {
+  const SmartTutorApp({super.key});
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -32,7 +37,7 @@ class SmartTutorApp extends StatelessWidget {
         '/': (context) => LandingPage(),
         '/login': (context) => LoginPage(),
         '/studentForm': (context) => StudentFormPage(),
-        '/studentHome': (context) => StudentHomePage(),
+        '/studentHome': (context) => const StudentHomePage(),
         '/tutorHome': (context) => TutorHomePage(),
         '/tutorList': (context) => TutorListPage(),
         '/tutionDetail': (context) => TutionDetailPage(),
@@ -42,6 +47,9 @@ class SmartTutorApp extends StatelessWidget {
         '/introVideo': (context) => IntroVideoPage(),
         '/availability': (context) => AvailabilityPage(),
         '/subjectsCourses': (context) => SubjectsCoursesPage(),
+        '/editProfile': (context) => const EditProfilePage(),
+        '/requirementDetails': (context) => const RequirementDetailsPage(),
+        '/tutorRatings': (context) => const TutorRatingsPage(),
       },
     );
   }

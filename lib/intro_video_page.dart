@@ -1,12 +1,14 @@
 import 'package:flutter/material.dart';
 
 class IntroVideoPage extends StatelessWidget {
+  const IntroVideoPage({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
         title: Text('Intro Video'),
-        backgroundColor: Colors.deepPurple,
+        backgroundColor: const Color.fromARGB(255, 224, 222, 228),
       ),
       body: Padding(
         padding: const EdgeInsets.all(16.0),
@@ -33,7 +35,7 @@ class IntroVideoPage extends StatelessWidget {
               child: Center(
                 child: Icon(
                   Icons.play_circle_fill,
-                  color: Colors.deepPurple,
+                  color: const Color.fromARGB(255, 92, 63, 142),
                   size: 64,
                 ),
               ),
@@ -52,7 +54,7 @@ class IntroVideoPage extends StatelessWidget {
                   icon: Icon(Icons.play_arrow),
                   label: Text('Play'),
                   style: ElevatedButton.styleFrom(
-                    backgroundColor: Colors.deepPurple,
+                    backgroundColor: const Color.fromARGB(255, 215, 211, 222),
                     padding: EdgeInsets.symmetric(horizontal: 24, vertical: 12),
                   ),
                 ),
@@ -67,7 +69,7 @@ class IntroVideoPage extends StatelessWidget {
                   icon: Icon(Icons.stop),
                   label: Text('Stop'),
                   style: ElevatedButton.styleFrom(
-                    backgroundColor: Colors.deepPurple,
+                    backgroundColor: const Color.fromARGB(255, 195, 190, 203),
                     padding: EdgeInsets.symmetric(horizontal: 24, vertical: 12),
                   ),
                 ),

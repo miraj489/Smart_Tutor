@@ -3,13 +3,15 @@ import 'package:flutter/material.dart';
 class StudentFormPage extends StatelessWidget {
   final _formKey = GlobalKey<FormState>();
 
+  StudentFormPage({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.purple[50],
       appBar: AppBar(
         title: Text('Student Request Form'),
-        backgroundColor: Colors.deepPurple,
+        backgroundColor: const Color.fromARGB(255, 228, 226, 232),
       ),
       body: Padding(
         padding: const EdgeInsets.all(20.0),

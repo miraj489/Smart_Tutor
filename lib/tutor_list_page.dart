@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 
 class TutorListPage extends StatefulWidget {
+  const TutorListPage({super.key});
+
   @override
   _TutorListPageState createState() => _TutorListPageState();
 }
@@ -52,7 +54,7 @@ class _TutorListPageState extends State<TutorListPage> {
     return Scaffold(
       appBar: AppBar(
         title: Text('Tutors List'),
-        backgroundColor: Colors.deepPurple,
+        backgroundColor: const Color.fromARGB(255, 228, 226, 232),
         actions: [
           PopupMenuButton<String>(
             icon: Icon(Icons.filter_alt),
@@ -63,10 +65,10 @@ class _TutorListPageState extends State<TutorListPage> {
             },
             itemBuilder:
                 (context) => [
-                  PopupMenuItem(child: Text("All"), value: "All"),
-                  PopupMenuItem(child: Text("Dhanmondi"), value: "Dhanmondi"),
-                  PopupMenuItem(child: Text("Uttara"), value: "Uttara"),
-                  PopupMenuItem(child: Text("Mirpur"), value: "Mirpur"),
+                  PopupMenuItem(value: "All", child: Text("All")),
+                  PopupMenuItem(value: "Dhanmondi", child: Text("Dhanmondi")),
+                  PopupMenuItem(value: "Uttara", child: Text("Uttara")),
+                  PopupMenuItem(value: "Mirpur", child: Text("Mirpur")),
                 ],
           ),
         ],
@@ -115,7 +117,7 @@ class _TutorListPageState extends State<TutorListPage> {
                   );
                 },
                 style: ElevatedButton.styleFrom(
-                  backgroundColor: Colors.deepPurple,
+                  backgroundColor: const Color.fromARGB(255, 215, 212, 222),
                 ),
                 child: Text('View Details'),
               ),

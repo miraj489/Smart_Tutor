@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 
 class SearchJobsPage extends StatefulWidget {
+  const SearchJobsPage({super.key});
+
   @override
   _SearchJobsPageState createState() => _SearchJobsPageState();
 }
@@ -93,7 +95,7 @@ class _SearchJobsPageState extends State<SearchJobsPage> {
     return Scaffold(
       appBar: AppBar(
         title: Text('Tuition Jobs'),
-        backgroundColor: Colors.deepPurple,
+        backgroundColor: const Color.fromARGB(255, 222, 219, 226),
         actions: [
           IconButton(
             icon: Icon(Icons.filter_alt),
@@ -238,7 +240,6 @@ class _SearchJobsPageState extends State<SearchJobsPage> {
                         showFilter = false;
                       });
                     },
-                    child: Text('Apply Filter'),
                     style: ElevatedButton.styleFrom(
                       backgroundColor: Colors.deepPurple,
                       padding: EdgeInsets.symmetric(
@@ -246,6 +247,7 @@ class _SearchJobsPageState extends State<SearchJobsPage> {
                         horizontal: 24,
                       ),
                     ),
+                    child: Text('Apply Filter'),
                   ),
                 ],
               ),
@@ -368,7 +370,6 @@ class _SearchJobsPageState extends State<SearchJobsPage> {
                           selectedJob = null;
                         });
                       },
-                      child: Text('Apply Now'),
                       style: ElevatedButton.styleFrom(
                         backgroundColor: Colors.deepPurple,
                         padding: EdgeInsets.symmetric(
@@ -376,6 +377,7 @@ class _SearchJobsPageState extends State<SearchJobsPage> {
                           horizontal: 24,
                         ),
                       ),
+                      child: Text('Apply Now'),
                     ),
                   ],
                 ),
