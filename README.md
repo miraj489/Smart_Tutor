@@ -3,7 +3,7 @@ Smart Tutor
 Vedio link of the app how actually app work:
 https://drive.google.com/file/d/130T4sUevKIlIAQepLBIh-ZBPATovsKKD/view?usp=drivesdk
 
-App API link:
+App APk link:
 https://drive.google.com/file/d/1kBJdald_zRtFAM9AuF63w18ND7iBoeud/view?usp=drivesdk
 
 Some picture of the app interfaces:
