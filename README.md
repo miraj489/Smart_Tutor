@@ -1,16 +1,10 @@
-# smart_tutor
+Smart Tutor
 
-A new Flutter project.
+Vedio link of the app how actually app work:
+https://drive.google.com/file/d/130T4sUevKIlIAQepLBIh-ZBPATovsKKD/view?usp=drivesdk
 
-## Getting Started
+App API link:
+https://drive.google.com/file/d/1kBJdald_zRtFAM9AuF63w18ND7iBoeud/view?usp=drivesdk
 
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Some picture of the app interfaces:
+https://drive.google.com/drive/folders/13NnTEEDS6C2eCAfJYY0Cd9U3GDgtvn4p
