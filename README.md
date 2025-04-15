@@ -8,3 +8,6 @@ https://drive.google.com/file/d/1kBJdald_zRtFAM9AuF63w18ND7iBoeud/view?usp=drive
 
 Some picture of the app interfaces:
 https://drive.google.com/drive/folders/13NnTEEDS6C2eCAfJYY0Cd9U3GDgtvn4p
+
+Project report link:
+https://drive.google.com/file/d/1GpoTRp34bHDPhzsBOScqQLp1JhaPw4_O/view?usp=drivesdk
