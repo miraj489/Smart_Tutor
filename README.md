@@ -10,4 +10,4 @@ Some picture of the app interfaces:
 https://drive.google.com/drive/folders/13NnTEEDS6C2eCAfJYY0Cd9U3GDgtvn4p
 
 Project report link:
-https://drive.google.com/file/d/1GpoTRp34bHDPhzsBOScqQLp1JhaPw4_O/view?usp=drivesdk
+https://drive.google.com/file/d/1KDWmZCLuGqhN38OEm7CKVQ6HVGID2Ddu/view?usp=drive_link
